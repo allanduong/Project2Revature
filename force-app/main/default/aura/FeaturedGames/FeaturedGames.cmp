@@ -1,0 +1,27 @@
+<aura:component controller='findProductfields'>
+    <aura:attribute name="gamePicture" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.findPicture}"/>
+    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false">
+        <lightning:carouselImage
+            src = "/docs/component-library/app/images/examples/carousel-01.png"
+            header = "First Game"
+            description = "First Game description."
+            alternativeText = "First Game accessible description."
+            href = "https://www.salesforce.com">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "/docs/component-library/app/images/examples/carousel-02.png"
+            header = "Second Game"
+            description = "Second Game description."
+            alternativeText = "Second Game accessible description."
+            href = "https://www.salesforce.com">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "/docs/component-library/app/images/examples/carousel-03.png"
+            header = "Third Game"
+            description = "Third Game description."
+            alternativeText = "Third Game accessible description."
+            href = "https://www.salesforce.com">
+        </lightning:carouselImage>
+    </lightning:carousel>
+</aura:component>

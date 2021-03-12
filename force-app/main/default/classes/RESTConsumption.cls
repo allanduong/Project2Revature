@@ -23,17 +23,21 @@ public inherited sharing class RESTConsumption {
         String gameBanner;
         String gameCover;
         String gameIcon;
+        Product2[] pros = new List<Product2>();
+        String containsName;
+        Decimal gamePrice;
         
         
-        while(counter < 3){
+        while(counter < 82){
             if(response.getStatusCode() == 200) {
                 Object deserializedResponse = JSON.deserializeUntyped(response.getBody());
                 Map<String, Object> respMap = (Map<String, Object>) deserializedResponse;
                 List<Object> products = (List<Object>) respMap.get('docs');
-                Map<String, Object> specificProducts = (Map<String, Object>)products[1];
+                Map<String, Object> specificProducts = (Map<String, Object>)products[0];
                 //system.debug(SpecificProducts.get('name'));
                 gameImgs = (List<Object>) specificProducts.get('images');
                 
+                gamePrice = (Decimal) specificProducts.get('minPrice');
                 gameId = (String) specificProducts.get('id');
                 gameName = (String) specificProducts.get('name');
                 gameKeyType = (String) specificProducts.get('type');
@@ -45,20 +49,26 @@ public inherited sharing class RESTConsumption {
                 gameIcon = (String) specificProducts.get('smallImage');
                 gameBanner = (String) gameImgs[1];
                 
-                //Below was to see if I can make a product object and give it attributes.
-                /*Product2 dummy = new Product2(ProductCode = gameId,
-												Name = gameName,
-												Type__c = gameKeyType,
-												Quantity__c = gameQuantity,
-												Release_Date__c = gamereleaseDate,
-												Region__c = gameRegion,
-												Platform__c = gamePlatform
-												); */
-                
+                Product2 p = new Product2(ProductCode = gameId,
+                                          Name = gameName,
+                                          Type__c = gameKeyType,
+                                          Quantity__c = gameQuantity,
+                                          Release_Date__c = gamereleaseDate,
+                                          Region__c = gameRegion,
+                                          Platform__c = gamePlatform,
+                                          Game_Cover__c = gameCover,
+                                          Game_Banner__c = gameBanner,
+                                          Game_Icon__c = gameIcon,
+                                          Game_Price__c = gamePrice,
+                                          IsActive = TRUE);
+                if(!pros.contains(p)){
+                    pros.add(p);
+                }
                 counter++;
                 request.setEndpoint(apiLink + String.valueof(counter));
                 response = http.send(request);
             }
         }
+        insert pros;
     }
 }
