@@ -18,10 +18,14 @@
                 
             </lightning:carouselImage>
             <lightning:carouselImage
-                                     src = "{!v.gamePicture1}">
+                                     src = "{!v.gamePicture1}"
+                                     header="First card"
+                                     description="First card description">
             </lightning:carouselImage>
             <lightning:carouselImage
-                                     src = "{!v.gamePicture2}">
+                                     src = "{!v.gamePicture2}"
+                                     header="First card"
+                                     description="First card description">
             </lightning:carouselImage>
         </lightning:carousel>
     </div>

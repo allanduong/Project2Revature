@@ -19,7 +19,7 @@ public class findProductfields {
     
     @AuraEnabled
     public static String getGameName(){
-        
+
         return null;
     }
     
