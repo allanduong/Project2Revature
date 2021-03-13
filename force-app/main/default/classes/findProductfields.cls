@@ -1,18 +1,26 @@
 public class findProductfields {
     
-    public static List<String> getRandImgUrl(){
+    @AuraEnabled
+    public static String getRandImgUrl(){
         
-        List<String> tempCoverUrl;
+        List<String> tempCoverUrl = new List<String>();
         
         for (List<Product2> product : [SELECT Game_Cover__c FROM Product2]){
             for(Product2 p : product){
-                String pr;
-                pr = p.Game_Cover__c;
                 
-                tempCoverUrl.add(pr);
+                tempCoverUrl.add(p.Game_Cover__c);
             }
         }
-        return tempCoverUrl;
+        Integer listSize = tempCoverUrl.size() - 1;
+        Integer randomNumber = Integer.valueof((Math.random() * listSize));
+        String randomImg = tempCoverUrl[randomNumber];
+        return randomImg;
+    }
+    
+    @AuraEnabled
+    public static String getGameName(){
+        
+        return null;
     }
     
 }
