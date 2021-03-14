@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+<aura:dependency resource="markup://force:navigateToURL" type="EVENT"/>
+    <div id="aura-page">
+        <div class="container">
+            <lightning:button variant="brand" label="View Champions" title="Brand action" onclick="{! c.goToNewPage }" />
+        </div>
+    </div>
+</aura:component>

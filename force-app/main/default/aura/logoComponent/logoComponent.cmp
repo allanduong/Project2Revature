@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <div align="center" draggable="false" >
+        <img src="{!$Resource.lolStalkerLogo}"/>  
+        <h1>It's only illegal to stalk if you get caught...</h1>
+        <br></br>
+        <c:redirectButton/>
+    </div>
+</aura:component>
