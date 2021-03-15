@@ -1,6 +1,6 @@
 public class playerSearchRESTAPI{
     
-    private static String apiToken = 'RGAPI-9de6fe62-b459-4926-9ef3-c7fe2d267427';
+    private static String apiToken = apikey.getapi();
     
     public static String getToken(){
         return apiToken;
