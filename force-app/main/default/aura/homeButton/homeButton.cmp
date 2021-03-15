@@ -1,7 +1,7 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
     <aura:attribute name="url" type="String"/>
     <aura:attribute name="pageReference" type="Object"/>
     <aura:handler name="init" value="{! this }" action="{! c.init }"/>
     <lightning:navigation aura:id="navService"/>
-    <lightning:button variant="brand" label="View Champions" title="View Champions" onclick="{!c.handleClick}"/>
+    <lightning:button variant="brand" label="Home" title="Home" onclick="{!c.handleClick}"/>
 </aura:component>
