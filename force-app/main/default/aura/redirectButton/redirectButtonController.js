@@ -9,6 +9,7 @@
                 actionName: 'home'
             }
         };
+        console.log('HELLO'+pageReference.attributes.objectApiName);
         cmp.set("v.pageReference", pageReference);
         // Set the URL on the link or use the default if there's an error
         var defaultUrl = "#";
