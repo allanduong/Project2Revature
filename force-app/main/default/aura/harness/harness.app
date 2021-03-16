@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:featuredGames/>
+    <c:searchPlayerComponent/>
 </aura:application>
