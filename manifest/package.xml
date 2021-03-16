@@ -32,5 +32,25 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+    <members>*</members>
+    <name>SiteDotCom</name>    
+    </types>
+    <types>
+    <members>*</members>
+    <name>Network</name>    
+    </types>
+    <types>
+    <members>*</members>
+    <name>CustomSite</name>    
+    </types>
+    <types>
+    <members>*</members>
+    <name>CustomObject</name>    
+    </types>
+    <types>
+    <members>*</members>
+    <name>Profile</name>    
+    </types>
     <version>51.0</version>
 </Package>

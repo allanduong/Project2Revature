@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champion_Banner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( &quot;https://ddragon.leagueoflegends.com/cdn/img/champion/loading/&quot; + Banner_and_Splash__c ,  Name + &quot;&apos;s Banner&quot;)</formula>
+    <label>Champion Banner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
