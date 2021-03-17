@@ -32,7 +32,7 @@ public class playerSearchRESTAPI{
             
             List<SummonerAccount__c> sumsNames = [SELECT Name, id__c, puuid__c, accountId__c, profileIconId__c, Summoner_Level__c 
                                       FROM SummonerAccount__c 
-                                      WHERE Name = :accountName];
+                                      WHERE id__c = :sumId];
             SummonerAccount__c summoner = new SummonerAccount__c();
             for(Integer i = 0; i < 1; i++){
 

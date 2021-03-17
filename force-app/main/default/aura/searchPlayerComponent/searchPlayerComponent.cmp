@@ -4,6 +4,7 @@
     <aura:attribute name="profileName" type="String" access="global"/>
     <aura:attribute name="profilePic" type="String" access="global"/>
     <aura:attribute name="imgSize" type="String" access="global"/>
+    <aura:attribute name="profileLevel" type="String" access="global"/>
     <span onkeypress="{!c.searchFunction}" class="slds-size--11-of-12">
         <lightning:layoutItem size="12">
             <lightning:input aura:id="sumName"
@@ -12,10 +13,13 @@
                              placeholder="Enter Summoner Name..."/>
             
         </lightning:layoutItem>
+        <hr/>
         <br/>
         <h1><strong>{!v.profileName}</strong></h1>
+        <h2><strong>{!v.profileLevel}</strong></h2>
         <p>
             <img style="{!v.imgSize}" src="{!v.profilePic}"/>
         </p>
     </span>
+    <hr/>
 </aura:component>
