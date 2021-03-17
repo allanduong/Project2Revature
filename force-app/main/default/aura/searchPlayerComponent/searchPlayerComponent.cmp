@@ -1,5 +1,6 @@
-<aura:component implements="forceCommunity:availableForAllPageTypes">
-    <span onkeypress="{!c.keyCheck}" class="slds-size--11-of-12">
+<aura:component controller="playerSearchRESTAPI" implements="forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="sumInfo" type="String"/>
+    <span onkeypress="{!c.searchFunction}" class="slds-size--11-of-12">
         <lightning:layoutItem size="12">
             <lightning:input aura:id="sumName"
                              label=""
