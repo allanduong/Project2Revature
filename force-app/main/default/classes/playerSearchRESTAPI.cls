@@ -6,7 +6,7 @@ public class playerSearchRESTAPI{
         return apiToken;
     }
     @AuraEnabled
-    public static void makeCallout(String sumsName){
+    public static sObject makeCallout(String sumsName){
         String sumName = sumsName;
         String token = playerSearchRESTAPI.getToken();
         Http http = new Http();
@@ -59,11 +59,12 @@ public class playerSearchRESTAPI{
             }
             upsert sumsNames;
             
-            
+            return sumsNames[0];
             
             //return sumAccount;
         }
         else if(response.getStatusCode() == 404 || response.getStatusCode() == 400){
         }
+        return null;
     }
 }
