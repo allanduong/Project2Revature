@@ -5,6 +5,8 @@
     <aura:attribute name="profilePic" type="String" access="global"/>
     <aura:attribute name="imgSize" type="String" access="global"/>
     <aura:attribute name="profileLevel" type="String" access="global"/>
+    <aura:attribute name="summonerId" type="String" access="global"/>
+    
     <span onkeypress="{!c.searchFunction}" class="slds-size--11-of-12">
         <lightning:layoutItem size="12">
             <lightning:input aura:id="sumName"
@@ -21,5 +23,6 @@
             <img style="{!v.imgSize}" src="{!v.profilePic}"/>
         </p>
     </span>
+    <c:champMastery summonerId="{!v.summonerId}"/>
     <hr/>
 </aura:component>

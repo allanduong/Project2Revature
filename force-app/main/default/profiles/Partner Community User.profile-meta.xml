@@ -105,6 +105,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>championMastery</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>findProductfields</apexClass>
         <enabled>false</enabled>
     </classAccesses>

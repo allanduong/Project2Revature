@@ -1,0 +1,8 @@
+<aura:component controller="championMastery" access="global">
+    
+    <aura:attribute name="summonerId" type="String" access="global"/>
+    <aura:attribute name="champ" type="String" access="global"/>
+    <aura:handler name="change" value="{!v.summonerId}" action="{!c.champMaster}"/>
+        <p>{!v.summonerId}</p>
+
+</aura:component>
