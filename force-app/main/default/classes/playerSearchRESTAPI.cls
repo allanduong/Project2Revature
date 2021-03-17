@@ -35,7 +35,6 @@ public class playerSearchRESTAPI{
                                       WHERE Name = :accountName];
             SummonerAccount__c summoner = new SummonerAccount__c();
             for(Integer i = 0; i < 1; i++){
-                system.debug('I ran');
 
                 if(sumsNames.size() >0){
                     sumsNames[0].accountId__c = accountId;

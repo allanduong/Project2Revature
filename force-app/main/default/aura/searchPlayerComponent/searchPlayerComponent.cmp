@@ -1,5 +1,7 @@
 <aura:component controller="playerSearchRESTAPI" implements="forceCommunity:availableForAllPageTypes">
+    
     <aura:attribute name="sumInfo" type="String"/>
+    <aura:attribute name="profileInfo" type="SummonerAccount__c"/>
     <span onkeypress="{!c.searchFunction}" class="slds-size--11-of-12">
         <lightning:layoutItem size="12">
             <lightning:input aura:id="sumName"
@@ -8,5 +10,6 @@
                              placeholder="Enter Summoner Name..."/>
             
         </lightning:layoutItem>
+        {!v.profileInfo.Profile_Icon__c}
     </span>
 </aura:component>

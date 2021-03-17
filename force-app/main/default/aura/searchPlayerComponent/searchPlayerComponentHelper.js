@@ -12,7 +12,7 @@
             leagueApex.setCallback(this, function(response) {
                 console.log(response.getState());
                 if(response.getState() == 'SUCCESS') {
-                    console.log('SUCCESS');
+                    
                     //component.set('v.sumInfo', response.getReturnValue());
                 }
                 else if(response.getState() == 'ERROR') {
