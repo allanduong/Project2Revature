@@ -16,7 +16,6 @@
             
         </lightning:layoutItem>
         <hr/>
-        <br/>
         <h1><strong>{!v.profileName}</strong></h1>
         <h2><strong>{!v.profileLevel}</strong></h2>
         <p>

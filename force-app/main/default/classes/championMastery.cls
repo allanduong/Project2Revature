@@ -11,6 +11,7 @@ public class championMastery {
         String token = championMastery.getToken();
         String sumId = summonerId;
         Object sumMasteries;
+        Map<String, Object> finalSumMasteries = new Map<String, Object>();
         
         Http http = new Http();
         HttpRequest request = new HttpRequest();
@@ -22,8 +23,21 @@ public class championMastery {
             Object deserializedResponse = JSON.deserializeUntyped(response.getBody());
             List<Object> respMap = (List<Object>) deserializedResponse;
             sumMasteries = respMap[index];
-            system.debug(sumMasteries);
-            return sumMasteries;
+            Map<String, Object> sumMaster = (Map<String, Object>)sumMasteries;
+            Integer champId = (Integer)sumMaster.get('championId');
+            List<Champion__c> listChamp = [SELECT Name,
+                                          Champion_Icon__c
+                                          FROM Champion__c
+                                          WHERE id__c = :champId];
+            Champion__c champ = listChamp[0];
+            List<String> mapChamp = new List<String>();
+            finalSumMasteries.put('champIcon',(String)champ.Champion_Icon__c);
+            finalSumMasteries.put('champName',(String)champ.Name);
+            system.debug(sumMaster);
+            sumMaster.putAll(finalSumMasteries);
+            
+            system.debug(sumMaster.get('champIcon'));
+            return sumMaster;
         }
         else{
             return null;

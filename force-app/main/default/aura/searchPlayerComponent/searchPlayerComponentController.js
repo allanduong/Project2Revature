@@ -14,7 +14,7 @@
                 if(response.getState() == 'SUCCESS') {
                     let tempObj = response.getReturnValue();
                     component.set('v.profilePic', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/profileicon/"+tempObj["profileIconId__c"]+".png");
-                    component.set('v.profileName', tempObj["Name"])
+                    component.set('v.profileName', tempObj["Name"]);
                     component.set('v.imgSize', "height: 150px; width: 150px;");
                     component.set('v.profileLevel', "Level: "+tempObj["Summoner_Level__c"]);
                     component.set('v.summonerId', tempObj["id__c"]);
