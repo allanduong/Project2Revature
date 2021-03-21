@@ -15,13 +15,13 @@
                              placeholder="Enter Summoner Name..."/>
             
         </lightning:layoutItem>
+            </span>
         <hr/>
         <h1><strong>{!v.profileName}</strong></h1>
         <h2><strong>{!v.profileLevel}</strong></h2>
         <p>
             <img style="{!v.imgSize}" src="{!v.profilePic}"/>
         </p>
-    </span>
     <c:champMastery summonerId="{!v.summonerId}"/>
     <hr/>
 </aura:component>

@@ -3,6 +3,8 @@
     <aura:attribute name="summonerId" type="String" access="global"/>
     <aura:handler name="change" value="{!v.summonerId}" action="{!c.champMaster}"/>
     
+    <aura:attribute name="masteryTitle" type="String" access="global"/>
+    
     <aura:attribute name="champName" type="String" access="global"/>
     <aura:attribute name="champLevel" type="String" access="global"/>
     <aura:attribute name="champPoints" type="String" access="global"/>
@@ -18,25 +20,41 @@
     <aura:attribute name="champPoints2" type="String" access="global"/>
     <aura:attribute name="champIcon2" type="String" access="global"/>
     
-    <!-- add the lightning layout?-->
     <br></br>
-    <h1><strong>{!v.champName}</strong></h1>
-    <h1><strong>{!v.champLevel}</strong></h1>
-    <h1><strong>{!v.champPoints}</strong></h1>
-    <p>
-        <img src="{!v.champIcon}"/>
-    </p>
-    <h1><strong>{!v.champName1}</strong></h1>
-    <h1><strong>{!v.champLevel1}</strong></h1>
-    <h1><strong>{!v.champPoints1}</strong></h1>
-    <p>
-        <img src="{!v.champIcon1}"/>
-    </p>
-    <h1><strong>{!v.champName2}</strong></h1>
-    <h1><strong>{!v.champLevel2}</strong></h1>
-    <h1><strong>{!v.champPoints2}</strong></h1>
-    <p>
-        <img src="{!v.champIcon2}"/>
-    </p>
+    <h1 style="font-size: 2em"><center><Strong>{!v.masteryTitle}</Strong></center></h1>
+    <div class="c-container">
+        <lightning:layout horizontalAlign="spread">
+            <lightning:layoutItem padding="around-small">
+                <div class="custom-box">
+                    <h1><strong>{!v.champName}</strong></h1>
+                    <h1><strong>{!v.champLevel}</strong></h1>
+                    <h1><strong>{!v.champPoints}</strong></h1>
+                    <p>
+                        <img src="{!v.champIcon}"/>
+                    </p>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small">
+                <div class="custom-box">
+                    <h1><strong>{!v.champName1}</strong></h1>
+                    <h1><strong>{!v.champLevel1}</strong></h1>
+                    <h1><strong>{!v.champPoints1}</strong></h1>
+                    <p>
+                        <img src="{!v.champIcon1}"/>
+                    </p>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small">
+                <div class="custom-box">
+                    <h1><strong>{!v.champName2}</strong></h1>
+                    <h1><strong>{!v.champLevel2}</strong></h1>
+                    <h1><strong>{!v.champPoints2}</strong></h1>
+                    <p>
+                        <img src="{!v.champIcon2}"/>
+                    </p>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
     
 </aura:component>

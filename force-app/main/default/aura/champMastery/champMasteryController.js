@@ -1,8 +1,8 @@
 ({
     champMaster : function(component, event, helper) {
-        console.log('I happened');
         let leagueApex = new component.get("c.makeCallout");
         let sumId = component.get("v.summonerId");
+        component.set('v.masteryTitle', 'Highest 3 Champion Mastery');
         leagueApex.setParams({summonerId : sumId,
                               index : 0});
         leagueApex.setCallback(this, function(response) {
