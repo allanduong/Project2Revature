@@ -30,7 +30,6 @@ public class championMastery {
                                           FROM Champion__c
                                           WHERE id__c = :champId];
             Champion__c champ = listChamp[0];
-            List<String> mapChamp = new List<String>();
             finalSumMasteries.put('champIcon',(String)champ.Champion_Icon__c);
             finalSumMasteries.put('champName',(String)champ.Name);
             system.debug(sumMaster);

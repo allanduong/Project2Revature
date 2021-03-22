@@ -6,6 +6,7 @@
     <aura:attribute name="imgSize" type="String" access="global"/>
     <aura:attribute name="profileLevel" type="String" access="global"/>
     <aura:attribute name="summonerId" type="String" access="global"/>
+    <aura:attribute name="encryptedAccountId" type="String"/>
     
     <span onkeypress="{!c.searchFunction}" class="slds-size--11-of-12">
         <lightning:layoutItem size="12">
@@ -23,5 +24,6 @@
             <img style="{!v.imgSize}" src="{!v.profilePic}"/>
         </p>
     <c:champMastery summonerId="{!v.summonerId}"/>
+    <c:matchHistory encryptedAccountId="{!v.encryptedAccountId}"/>
     <hr/>
 </aura:component>

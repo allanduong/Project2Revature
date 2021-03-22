@@ -117,6 +117,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>matchHistoryAPI</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>playerSearchRESTAPI</apexClass>
         <enabled>false</enabled>
     </classAccesses>
