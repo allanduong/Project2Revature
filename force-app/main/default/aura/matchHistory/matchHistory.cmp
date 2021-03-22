@@ -12,7 +12,6 @@
     <aura:attribute name="champName0" type="String"/>
     <aura:attribute name="champIcon0" type="String"/>
     <aura:attribute name="lane0" type="String"/>
-    <aura:attribute name="role0" type="String"/>
     
     <aura:attribute name="totalMinionsKilled1" type="String"/>
     <aura:attribute name="champLevel1" type="String"/>
@@ -24,7 +23,6 @@
     <aura:attribute name="champName1" type="String"/>
     <aura:attribute name="champIcon1" type="String"/>
     <aura:attribute name="lane1" type="String"/>
-    <aura:attribute name="role1" type="String"/>
     
     <aura:attribute name="totalMinionsKilled2" type="String"/>
     <aura:attribute name="champLevel2" type="String"/>
@@ -36,7 +34,6 @@
     <aura:attribute name="champName2" type="String"/>
     <aura:attribute name="champIcon2" type="String"/>
     <aura:attribute name="lane2" type="String"/>
-    <aura:attribute name="role2" type="String"/>
     
     <aura:attribute name="totalMinionsKilled3" type="String"/>
     <aura:attribute name="champLevel3" type="String"/>
@@ -48,7 +45,6 @@
     <aura:attribute name="champName3" type="String"/>
     <aura:attribute name="champIcon3" type="String"/>
     <aura:attribute name="lane3" type="String"/>
-    <aura:attribute name="role3" type="String"/>
     
     <aura:attribute name="totalMinionsKilled4" type="String"/>
     <aura:attribute name="champLevel4" type="String"/>
@@ -60,7 +56,6 @@
     <aura:attribute name="champName4" type="String"/>
     <aura:attribute name="champIcon4" type="String"/>
     <aura:attribute name="lane4" type="String"/>
-    <aura:attribute name="role4" type="String"/>
     
     <aura:attribute name="totalMinionsKilled5" type="String"/>
     <aura:attribute name="champLevel5" type="String"/>
@@ -72,7 +67,6 @@
     <aura:attribute name="champName5" type="String"/>
     <aura:attribute name="champIcon5" type="String"/>
     <aura:attribute name="lane5" type="String"/>
-    <aura:attribute name="role5" type="String"/>
     
     <aura:attribute name="totalMinionsKilled6" type="String"/>
     <aura:attribute name="champLevel6" type="String"/>
@@ -84,7 +78,6 @@
     <aura:attribute name="champName6" type="String"/>
     <aura:attribute name="champIcon6" type="String"/>
     <aura:attribute name="lane6" type="String"/>
-    <aura:attribute name="role6" type="String"/>
     
     <aura:attribute name="totalMinionsKilled7" type="String"/>
     <aura:attribute name="champLevel7" type="String"/>
@@ -96,7 +89,6 @@
     <aura:attribute name="champName7" type="String"/>
     <aura:attribute name="champIcon7" type="String"/>
     <aura:attribute name="lane7" type="String"/>
-    <aura:attribute name="role7" type="String"/>
     
     <aura:attribute name="totalMinionsKilled8" type="String"/>
     <aura:attribute name="champLevel8" type="String"/>
@@ -108,7 +100,6 @@
     <aura:attribute name="champName8" type="String"/>
     <aura:attribute name="champIcon8" type="String"/>
     <aura:attribute name="lane8" type="String"/>
-    <aura:attribute name="role8" type="String"/>
     
     <aura:attribute name="totalMinionsKilled9" type="String"/>
     <aura:attribute name="champLevel9" type="String"/>
@@ -120,7 +111,6 @@
     <aura:attribute name="champName9" type="String"/>
     <aura:attribute name="champIcon9" type="String"/>
     <aura:attribute name="lane9" type="String"/>
-    <aura:attribute name="role9" type="String"/>
     
     <aura:handler name="change" value="{!v.encryptedAccountId}" action="{!c.historyCheck}"/>
     
@@ -138,7 +128,6 @@
                             <img src="{!v.champIcon0}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills0}/{!v.deaths0}/{!v.assists0}</Strong></h1>
-                        <h1><Strong>Role: {!v.role0}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane0}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -160,7 +149,6 @@
                             <img src="{!v.champIcon1}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills1}/{!v.deaths1}/{!v.assists1}</Strong></h1>
-                        <h1><Strong>Role: {!v.role1}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane1}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -179,7 +167,6 @@
                             <img src="{!v.champIcon2}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills2}/{!v.deaths2}/{!v.assists2}</Strong></h1>
-                        <h1><Strong>Role: {!v.role2}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane2}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -198,7 +185,6 @@
                             <img src="{!v.champIcon3}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills3}/{!v.deaths3}/{!v.assists3}</Strong></h1>
-                        <h1><Strong>Role: {!v.role3}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane3}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -217,7 +203,6 @@
                             <img src="{!v.champIcon4}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills4}/{!v.deaths4}/{!v.assists4}</Strong></h1>
-                        <h1><Strong>Role: {!v.role4}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane4}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -236,7 +221,6 @@
                             <img src="{!v.champIcon5}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills5}/{!v.deaths5}/{!v.assists5}</Strong></h1>
-                        <h1><Strong>Role: {!v.role5}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane5}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -255,7 +239,6 @@
                             <img src="{!v.champIcon6}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills6}/{!v.deaths6}/{!v.assists6}</Strong></h1>
-                        <h1><Strong>Role: {!v.role6}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane6}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -274,7 +257,6 @@
                             <img src="{!v.champIcon7}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills7}/{!v.deaths7}/{!v.assists7}</Strong></h1>
-                        <h1><Strong>Role: {!v.role7}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane7}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -293,7 +275,6 @@
                             <img src="{!v.champIcon8}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills8}/{!v.deaths8}/{!v.assists8}</Strong></h1>
-                        <h1><Strong>Role: {!v.role8}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane8}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>
@@ -312,7 +293,6 @@
                             <img src="{!v.champIcon9}"/>
                         </p>
                         <h1><Strong>K/D/A: {!v.kills9}/{!v.deaths9}/{!v.assists9}</Strong></h1>
-                        <h1><Strong>Role: {!v.role9}</Strong></h1>
                         <h1><Strong>Lane: {!v.lane9}</Strong></h1>
                     </aura:set>
                 </lightning:accordionSection>

@@ -26,7 +26,6 @@
                 component.set('v.champName0', tempObj["champName"]);
                 component.set('v.champIcon0', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane0', tempObj["lane"]);
-                component.set('v.role0',tempObj["role"]);
                 
             }
         })
@@ -55,7 +54,6 @@
                 component.set('v.champName1', tempObj["champName"]);
                 component.set('v.champIcon1', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane1', tempObj["lane"]);
-                component.set('v.role1',tempObj["role"]);
                 
             }
         })
@@ -84,7 +82,6 @@
                 component.set('v.champName2', tempObj["champName"]);
                 component.set('v.champIcon2', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane2', tempObj["lane"]);
-                component.set('v.role2',tempObj["role"]);
                 
             }
         })
@@ -113,7 +110,6 @@
                 component.set('v.champName3', tempObj["champName"]);
                 component.set('v.champIcon3', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane3', tempObj["lane"]);
-                component.set('v.role3',tempObj["role"]);
                 
             }
         })
@@ -142,7 +138,6 @@
                 component.set('v.champName4', tempObj["champName"]);
                 component.set('v.champIcon4', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane4', tempObj["lane"]);
-                component.set('v.role4',tempObj["role"]);
                 
             }
         })
@@ -171,7 +166,6 @@
                 component.set('v.champName5', tempObj["champName"]);
                 component.set('v.champIcon5', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane5', tempObj["lane"]);
-                component.set('v.role5',tempObj["role"]);
                 
             }
         })
@@ -200,7 +194,6 @@
                 component.set('v.champName6', tempObj["champName"]);
                 component.set('v.champIcon6', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane6', tempObj["lane"]);
-                component.set('v.role6',tempObj["role"]);
                 
             }
         })
@@ -229,7 +222,6 @@
                 component.set('v.champName7', tempObj["champName"]);
                 component.set('v.champIcon7', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane7', tempObj["lane"]);
-                component.set('v.role7',tempObj["role"]);
                 
             }
         })
@@ -258,7 +250,6 @@
                 component.set('v.champName8', tempObj["champName"]);
                 component.set('v.champIcon8', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane8', tempObj["lane"]);
-                component.set('v.role8',tempObj["role"]);
                 
             }
         })
@@ -287,7 +278,6 @@
                 component.set('v.champName9', tempObj["champName"]);
                 component.set('v.champIcon9', "https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/"+tempObj["champIcon"]);
                 component.set('v.lane9', tempObj["lane"]);
-                component.set('v.role9',tempObj["role"]);
                 
             }
         })
